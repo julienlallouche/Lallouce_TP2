@@ -1,0 +1,175 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER*/
+
+header
+{
+    background-image: url("lauzanne_img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.navigation
+{
+    background-color: #292929;
+    opacity: 67%;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+img.logo {
+    width: 23%;
+}
+
+
+
+.media i
+{
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+/* Choix - bas de page */
+
+.container_selection
+{
+    bottom: 0%;
+    position: absolute;
+    width: 100%;
+}
+
+.container_selection ul
+{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.container_selection li
+{
+    background-color: #292933;
+    width: 85%;
+    text-align: center;
+    padding: 16px;
+    margin: 1px;
+    color: white;
+    opacity: 90%;
+    font-size: 21px;
+}
+
+.sun, .texte
+{
+    display: none;
+}
+
+nav{
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 1280px)
+{
+
+    img.logo {
+        width: 13%;
+    }
+
+    .sun, .texte
+    {
+        display: block;
+        width: 9%;
+        font-size: 20px;
+    }
+
+    .media{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*Choix - bas de page*/
+
+    .container_selection ul
+    {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+
+    .container_selection li
+    {
+        background-color: #292933;
+        margin-right: 10px;
+        width: 23%;
+        padding: 30px;
+        opacity: 90%;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /*Réseaux*/
+
+    nav{
+        display: block;
+        position: absolute;
+        width: 5%;
+        bottom: 23%;
+    }
+    nav li{
+        height: 57px;
+        position:relative;
+    }
+    nav li a{
+        color: white;
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 60px;
+        transition: all .5s linear;
+        background-color: #2892d0;
+        text-decoration: none;;
+    }
+
+    ul li a span{
+        display: none;
+        position: relative;
+        left: 40%;
+        font-size: 21px;
+    }
+
+    nav li a i{
+        position: absolute;
+        font-size: 25px;
+        top: 24%;
+        left: 25%;
+    }
+
+    a:hover {
+        width: 180px;
+        background-color: #134970;
+
+    }
+    ul li:hover a span{
+        display: block;
+    }
+
+}
